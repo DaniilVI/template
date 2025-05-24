@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <div class="app">
+        <header class="header">
+            <a href="/" class="header__linkCaption">
+                <span>last.fm</span>
+            </a>
+            <div class="header__search">
+                <input type="search" name="search" class="header__input" placeholder="Search" />
+                <button type="submit" class="search__button"></button>
+            </div>
+            <div class="header__links">
+                <a href="/" class="header__link">Home</a>
+                <a href="/" class="header__link">Live</a>
+                <a href="/" class="header__link">Music</a>
+                <a href="/" class="header__link">Charts</a>
+                <a href="/" class="header__link">Events</a>
+                <a href="/" class="header__link">Features</a>
+            </div>
+        </header>
+        <main class="main__search">
+            <div class="main__nav">
+                <h1 class="main__searchHead1">Search results for “артур пирожков”</h1>
+                <nav class="nav__search">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="/" class="nav__link">Top Results</a>
+                        </li>
+                        <li>
+                            <a href="/" class="nav__link">Artists</a>
+                        </li>
+                        <li>
+                            <a href="/" class="nav__link">Albums</a>
+                        </li>
+                        <li>
+                            <a href="/" class="nav__link">Tracks</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main__searchSpace">
+                <div class="accordion">
+                    <form class="search__form" method="get">
+                        <input class="search__field" name="searchInput" type="text" placeholder="Search for music...">
+                        <button class="search__reset" type="reset">Reset</button>
+                        <button class="search__submit" type="submit">Search</button>
+                    </form>
+                    <h2><a href="/" class="main__headLink">Artists</a></h2>
+                    <ol class="artistList">
+                        <li class="artistListItem">
+                            <img src="artur.jpg" alt="Image for 'Артур Пирожков'" loading="lazy">
+                            <div class="artistListItemDetails">
+                                <p>
+                                    <a href="/" class="artistLink" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                                <p class="artistListItemDetailsListeners">
+                                    40,590
+                                    <span>listeners</span>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="artistListItem">
+                            <img src="artur.jpg" alt="Image for 'Артур Пирожков'" loading="lazy">
+                            <div class="artistListItemDetails">
+                                <p>
+                                    <a href="/" class="artistLink" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                                <p class="artistListItemDetailsListeners">
+                                    40,590
+                                    <span>listeners</span>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="artistListItem">
+                            <img src="artur.jpg" alt="Image for 'Артур Пирожков'" loading="lazy">
+                            <div class="artistListItemDetails">
+                                <p>
+                                    <a href="/" class="artistLink" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                                <p class="artistListItemDetailsListeners">
+                                    40,590
+                                    <span>listeners</span>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="artistListItem">
+                            <img src="artur.jpg" alt="Image for 'Артур Пирожков'" loading="lazy">
+                            <div class="artistListItemDetails">
+                                <p>
+                                    <a href="/" class="artistLink" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                                <p class="artistListItemDetailsListeners">
+                                    40,590
+                                    <span>listeners</span>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="artistListItem">
+                            <img src="artur.jpg" alt="Image for 'Артур Пирожков'" loading="lazy">
+                            <div class="artistListItemDetails">
+                                <p>
+                                    <a href="/" class="artistLink" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                                <p class="artistListItemDetailsListeners">
+                                    40,590
+                                    <span>listeners</span>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="artistListItem">
+                            <img src="artur.jpg" alt="Image for 'Артур Пирожков'" loading="lazy">
+                            <div class="artistListItemDetails">
+                                <p>
+                                    <a href="/" class="artistLink" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                                <p class="artistListItemDetailsListeners">
+                                    40,590
+                                    <span>listeners</span>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="artistListItem">
+                            <img src="artur.jpg" alt="Image for 'Артур Пирожков'" loading="lazy">
+                            <div class="artistListItemDetails">
+                                <p>
+                                    <a href="/" class="artistLink" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                                <p class="artistListItemDetailsListeners">
+                                    40,590
+                                    <span>listeners</span>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="artistListItem">
+                            <img src="artur.jpg" alt="Image for 'Артур Пирожков'" loading="lazy">
+                            <div class="artistListItemDetails">
+                                <p>
+                                    <a href="/" class="artistLink" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                                <p class="artistListItemDetailsListeners">
+                                    40,590
+                                    <span>listeners</span>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                    </ol>
+                    <p class="moreLink">
+                        <a href="/">More artists</a>
+                    </p>
+                    <h2><a href="/" class="main__headLink">Albums</a></h2>
+                    <ol class="albumList">
+                        <li class="albumListItem">
+                            <img src="zacepila.jpg" alt="Image for 'Зацепила'" loading="lazy">
+                            <div class="albumListItemDetails">
+                                <p>
+                                    <a href="/" class="albumLink" title="Артур Пирожков">
+                                        Зацепила
+                                    </a>
+                                </p>
+                                <p class="albumListItemDetailsArtist">
+                                    <a href="/" class="artistLinkSecond" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="albumListItem">
+                            <img src="zacepila.jpg" alt="Image for 'Зацепила'" loading="lazy">
+                            <div class="albumListItemDetails">
+                                <p>
+                                    <a href="/" class="albumLink" title="Артур Пирожков">
+                                        Зацепила
+                                    </a>
+                                </p>
+                                <p class="albumListItemDetailsArtist">
+                                    <a href="/" class="artistLinkSecond" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="albumListItem">
+                            <img src="zacepila.jpg" alt="Image for 'Зацепила'" loading="lazy">
+                            <div class="albumListItemDetails">
+                                <p>
+                                    <a href="/" class="albumLink" title="Артур Пирожков">
+                                        Зацепила
+                                    </a>
+                                </p>
+                                <p class="albumListItemDetailsArtist">
+                                    <a href="/" class="artistLinkSecond" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="albumListItem">
+                            <img src="zacepila.jpg" alt="Image for 'Зацепила'" loading="lazy">
+                            <div class="albumListItemDetails">
+                                <p>
+                                    <a href="/" class="albumLink" title="Артур Пирожков">
+                                        Зацепила
+                                    </a>
+                                </p>
+                                <p class="albumListItemDetailsArtist">
+                                    <a href="/" class="artistLinkSecond" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="albumListItem">
+                            <img src="zacepila.jpg" alt="Image for 'Зацепила'" loading="lazy">
+                            <div class="albumListItemDetails">
+                                <p>
+                                    <a href="/" class="albumLink" title="Артур Пирожков">
+                                        Зацепила
+                                    </a>
+                                </p>
+                                <p class="albumListItemDetailsArtist">
+                                    <a href="/" class="artistLinkSecond" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="albumListItem">
+                            <img src="zacepila.jpg" alt="Image for 'Зацепила'" loading="lazy">
+                            <div class="albumListItemDetails">
+                                <p>
+                                    <a href="/" class="albumLink" title="Артур Пирожков">
+                                        Зацепила
+                                    </a>
+                                </p>
+                                <p class="albumListItemDetailsArtist">
+                                    <a href="/" class="artistLinkSecond" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="albumListItem">
+                            <img src="zacepila.jpg" alt="Image for 'Зацепила'" loading="lazy">
+                            <div class="albumListItemDetails">
+                                <p>
+                                    <a href="/" class="albumLink" title="Артур Пирожков">
+                                        Зацепила
+                                    </a>
+                                </p>
+                                <p class="albumListItemDetailsArtist">
+                                    <a href="/" class="artistLinkSecond" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                        <li class="albumListItem">
+                            <img src="zacepila.jpg" alt="Image for 'Зацепила'" loading="lazy">
+                            <div class="albumListItemDetails">
+                                <p>
+                                    <a href="/" class="albumLink" title="Артур Пирожков">
+                                        Зацепила
+                                    </a>
+                                </p>
+                                <p class="albumListItemDetailsArtist">
+                                    <a href="/" class="artistLinkSecond" title="Артур Пирожков">
+                                        Артур Пирожков
+                                    </a>
+                                </p>
+                            </div>
+                            <a href="/" class="avatarLink" tabindex="-1" aria-hidden="true"></a>
+                        </li>
+                    </ol>
+                    <p class="moreLink">
+                        <a href="/">More albums</a>
+                    </p>
+                    <h2><a href="/" class="main__headLink">Tracks</a></h2>
+                    <table class="trackList">
+                        <thead class="trackList__head">
+                            <tr>
+                                <th>Play</th>
+                                <th>Album</th>
+                                <th>Track name</th>
+                                <th>Artist name</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody class="trackList">
+                            <tr class="trackList__row">
+                                <td class="trackList__play">
+                                    <a href="/" class="trackList__playLink">Play track</a>
+                                </td>
+                                <td>
+                                    <a href="/" class="trackList__album">
+                                        <img src="album.jpg" alt="Зацепила" loading="lazy">
+                                    </a>
+                                </td>
+                                <td class="trackList__name">
+                                    <a href="/" class="trackList__nameLink">Зацепила</a>
+                                </td>
+                                <td class="trackList__artist">
+                                    <a href="/" class="trackList__artistLink">Артур Пирожков</a>
+                                </td>
+                                <td class="trackList__duration">3:39</td>
+                            </tr>
+                            <tr class="trackList__row">
+                                <td class="trackList__play">
+                                    <a href="/" class="trackList__playLink">Play track</a>
+                                </td>
+                                <td>
+                                    <a href="/" class="trackList__album">
+                                        <img src="album.jpg" alt="Зацепила" loading="lazy">
+                                    </a>
+                                </td>
+                                <td class="trackList__name">
+                                    <a href="/" class="trackList__nameLink">Зацепила</a>
+                                </td>
+                                <td class="trackList__artist">
+                                    <a href="/" class="trackList__artistLink">Артур Пирожков</a>
+                                </td>
+                                <td class="trackList__duration">3:39</td>
+                            </tr>
+                            <tr class="trackList__row">
+                                <td class="trackList__play">
+                                    <a href="/" class="trackList__playLink">Play track</a>
+                                </td>
+                                <td>
+                                    <a href="/" class="trackList__album">
+                                        <img src="album.jpg" alt="Зацепила" loading="lazy">
+                                    </a>
+                                </td>
+                                <td class="trackList__name">
+                                    <a href="/" class="trackList__nameLink">Зацепила</a>
+                                </td>
+                                <td class="trackList__artist">
+                                    <a href="/" class="trackList__artistLink">Артур Пирожков</a>
+                                </td>
+                                <td class="trackList__duration">3:39</td>
+                            </tr>
+                            <tr class="trackList__row">
+                                <td class="trackList__play">
+                                    <a href="/" class="trackList__playLink">Play track</a>
+                                </td>
+                                <td>
+                                    <a href="/" class="trackList__album">
+                                        <img src="album.jpg" alt="Зацепила" loading="lazy">
+                                    </a>
+                                </td>
+                                <td class="trackList__name">
+                                    <a href="/" class="trackList__nameLink">Зацепила</a>
+                                </td>
+                                <td class="trackList__artist">
+                                    <a href="/" class="trackList__artistLink">Артур Пирожков</a>
+                                </td>
+                                <td class="trackList__duration">3:39</td>
+                            </tr>
+                            <tr class="trackList__row">
+                                <td class="trackList__play">
+                                    <a href="/" class="trackList__playLink">Play track</a>
+                                </td>
+                                <td>
+                                    <a href="/" class="trackList__album">
+                                        <img src="album.jpg" alt="Зацепила" loading="lazy">
+                                    </a>
+                                </td>
+                                <td class="trackList__name">
+                                    <a href="/" class="trackList__nameLink">Зацепила</a>
+                                </td>
+                                <td class="trackList__artist">
+                                    <a href="/" class="trackList__artistLink">Артур Пирожков</a>
+                                </td>
+                                <td class="trackList__duration">3:39</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="moreLink">
+                        <a href="/">More tracks</a>
+                    </p>
+                </div>
+                <div class="space">
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__topColumn">
+                    <h2 class="footer__heading">Company</h2>
+                    <ul class="footer__links">
+                        <li><a href="/" class="footer__link">About Last.fm</a></li>
+                        <li><a href="/" class="footer__link">Contact Us</a></li>
+                        <li><a href="/" class="footer__link">Jobs</a></li>
+                        <li><a href="/" class="footer__link">Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer__topColumn">
+                    <h2 class="footer__heading">Help</h2>
+                    <ul class="footer__links">
+                        <li><a href="/" class="footer__link">Track My Music</a></li>
+                        <li><a href="/" class="footer__link">Community Support</a></li>
+                        <li><a href="/" class="footer__link">Community Guidelines</a></li>
+                        <li><a href="/" class="footer__link">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer__topColumn">
+                    <h2 class="footer__heading">Goodies</h2>
+                    <ul class="footer__links">
+                        <li><a href="/" class="footer__link">Download Scrobbler</a></li>
+                        <li><a href="/" class="footer__link">Developer API</a></li>
+                        <li><a href="/" class="footer__link">Free Music Downloads</a></li>
+                        <li><a href="/" class="footer__link">Merchandise</a></li>
+                    </ul>
+                </div>
+                <div class="footer__topColumn">
+                    <h2 class="footer__heading">Account</h2>
+                    <ul class="footer__links">
+                        <li><a href="/" class="footer__link">Sign Up</a></li>
+                        <li><a href="/" class="footer__link">Log In</a></li>
+                        <li><a href="/" class="footer__link">Subscribe</a></li>
+                    </ul>
+                </div>
+                <div class="footer__topColumn">
+                    <h2 class="footer__heading">Follow Us</h2>
+                    <ul class="footer__links">
+                        <li><a href="/" class="footer__link">Facebook</a></li>
+                        <li><a href="/" class="footer__link">X</a></li>
+                        <li><a href="/" class="footer__link">Bluesky</a></li>
+                        <li><a href="/" class="footer__link">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__data">
+                    <a class="footer__smallLink" href="http://www.cbsinteractive.com/" rel="nofollow">CBS
+                        Interactive</a>
+                    <span>&nbsp;© 2025 Last.fm Ltd. All rights reserved&nbsp;</span>
+                    <ul>
+                        <li class="footer__legalListItem">
+                            <a class="footer__smallLink" href="/">&middot; Terms of Use</a>
+                        </li>
+                        <li class="footer__legalListItem">
+                            <a class="footer__smallLink" href="/">&middot; Privacy Policy</a>
+                        </li>
+                        <li class="footer__legalListItem">
+                            <a class="footer__smallLink" href="/">&middot; Legal Policies</a>
+                        </li>
+                        <li class="footer__legalListItem">
+                            <a class="footer__smallLink" href="/">&middot; Cookie Details</a>
+                        </li>
+                        <li class="footer__legalListItem">
+                            <a class="footer__smallLink" href="/">&middot; Jobs at Paramount</a>
+                        </li>
+                        <li class="footer__legalListItem">
+                            <a class="footer__smallLink" href="/">&middot; Last.fm Music</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__logo">
+                    <p>Audioscrobbler</p>
+                    <img src="footer_logo.png" width="37" height="20" alt="Last.fm 'as' logo" loading="lazy" />
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
