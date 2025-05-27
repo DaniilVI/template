@@ -18,6 +18,7 @@
     -->
   <title>React App</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -35,686 +36,108 @@
     -->
   <div class="app">
     <header class="header">
-      <a href="/" class="header__linkCaption">
+      <a href="https://www.last.fm/" class="header__linkCaption">
         <span>last.fm</span>
       </a>
       <div class="header__search">
-        <input type="search" name="search" class="header__input" placeholder="Search" />
-        <button type="submit" class="search__button"></button>
+        <form class="header__form" method="get">
+          <input type="search" name="search" class="header__input" placeholder="Search" />
+          <button type="submit" class="search__button"></button>
+        </form>
       </div>
       <div class="header__links">
-        <a href="/" class="header__link">Home</a>
-        <a href="/" class="header__link">Live</a>
-        <a href="/" class="header__link">Music</a>
-        <a href="/" class="header__link">Charts</a>
-        <a href="/" class="header__link">Events</a>
-        <a href="/" class="header__link">Features</a>
+        <a href="https://www.last.fm/dashboard" class="header__link">Live</a>
+        <a href="/" class="header__link header__music">Music</a>
+        <a href="https://www.last.fm/charts" class="header__link">Charts</a>
+        <a href="https://www.last.fm/events" class="header__link">Events</a>
       </div>
     </header>
     <main class="main">
-      <h1 class="main__head1">Music</h1>
-      <h2 class="main__head2">Hot right now</h2>
-      <ol class="main__hotList">
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-
-        <li class="main__artistsListItem">
-          <div class="main__artistCard">
-            <h3 class="main__head3">
-              <a href="/" class="main__linkCard">BTS</a>
-            </h3>
-            <ul class="main__tagList">
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">k-pop</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">bts</a>
-              </li>
-              <li class="main__tagItem">
-                <a href="/" class="main__linkCard main__tag">kpop</a>
-              </li>
-            </ul>
-            <div class="main__mediaItem">
-              <span class="avatar">
-                <img src="bts.jpg" alt="Avatar for BTS" loading="lazy">
-              </span>
-            </div>
-            <a href="/" tabindex="-1" class="avatarLink"></a>
-          </div>
-        </li>
-      </ol>
-
-      <h2 class="main__head2">Popular tracks</h2>
-      <ol class="main__popularList">
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-
-        <li class="main__popularListItem">
-          <h3 class="main__head3">
-            <a href="/" class="main__linkCard">Don't Say You Love Me</a>
-          </h3>
-          <p>
-            <span><a href="/" class="main__linkCard main__artistTag">Jin</a></span>
-          </p>
-          <ul class="main__tagList">
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">rap</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">bts</a>
-            </li>
-            <li class="main__tagItem">
-              <a href="/" class="main__linkCard main__tag">hip hop</a>
-            </li>
-          </ul>
-          <div class="avatarKvadro">
-            <span>
-              <img src="echo.jpg" alt="echo" loading="lazy">
-            </span>
-          </div>
-          <a href="/" tabindex="-1" class="avatarKvadroLink"></a>
-        </li>
-      </ol>
+      <div class="main__music">
+        <h1 class="main__head1">Music</h1>
+        <h2 class="main__head2">Hot right now</h2>
+        <ol class="main__hotList">
+        </ol>
+        <h2 class="main__head2">Popular tracks</h2>
+        <ol class="main__popularList">
+        </ol>
+      </div>
+      <div class="main__searchSpace hide">
+        <div class="accordion">
+          <h1 class="main__searchHead1">Search results for “артур пирожков”</h1>
+          <form class="search__form" method="get">
+            <input class="search__field" name="searchInput" type="text" placeholder="Search for music...">
+            <button class="search__reset" type="reset">Reset</button>
+            <button class="search__submit" type="submit">Search</button>
+          </form>
+          <h2><span class="main__headLink">Artists</span></h2>
+          <ol class="artistList">
+          </ol>
+          <h2><span class="main__headLink">Albums</span></h2>
+          <ol class="albumList">
+          </ol>
+          <h2><span class="main__headLink">Tracks</span></h2>
+          <table class="trackListTable">
+            <thead class="trackList__head">
+              <tr>
+                <th>Album</th>
+                <th>Track name</th>
+                <th>Artist name</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody class="trackList">
+            </tbody>
+          </table>
+        </div>
+        <div class="space">
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__topColumn">
           <h2 class="footer__heading">Company</h2>
           <ul class="footer__links">
-            <li><a href="/" class="footer__link">About Last.fm</a></li>
-            <li><a href="/" class="footer__link">Contact Us</a></li>
-            <li><a href="/" class="footer__link">Jobs</a></li>
-            <li><a href="/" class="footer__link">Features</a></li>
+            <li><a href="https://www.last.fm/about" class="footer__link">About Last.fm</a></li>
+            <li><a href="https://www.last.fm/about/contact" class="footer__link">Contact Us</a></li>
+            <li><a href="https://www.last.fm/about/jobs" class="footer__link">Jobs</a></li>
+            <li><a href="https://www.last.fm/features" class="footer__link">Features</a></li>
           </ul>
         </div>
         <div class="footer__topColumn">
           <h2 class="footer__heading">Help</h2>
           <ul class="footer__links">
-            <li><a href="/" class="footer__link">Track My Music</a></li>
-            <li><a href="/" class="footer__link">Community Support</a></li>
-            <li><a href="/" class="footer__link">Community Guidelines</a></li>
-            <li><a href="/" class="footer__link">Help</a></li>
+            <li><a href="https://www.last.fm/about/trackmymusic" class="footer__link">Track My Music</a></li>
+            <li><a href="https://support.last.fm/" class="footer__link">Community Support</a></li>
+            <li><a href="https://www.last.fm/help/guidelines" class="footer__link">Community Guidelines</a></li>
+            <li><a href="https://www.last.fm/help/faq" class="footer__link">Help</a></li>
           </ul>
         </div>
         <div class="footer__topColumn">
           <h2 class="footer__heading">Goodies</h2>
           <ul class="footer__links">
-            <li><a href="/" class="footer__link">Download Scrobbler</a></li>
-            <li><a href="/" class="footer__link">Developer API</a></li>
-            <li><a href="/" class="footer__link">Free Music Downloads</a></li>
-            <li><a href="/" class="footer__link">Merchandise</a></li>
+            <li><a href="https://www.last.fm/about/trackmymusic" class="footer__link">Download Scrobbler</a></li>
+            <li><a href="https://www.last.fm/api" class="footer__link">Developer API</a></li>
+            <li><a href="https://www.last.fm/music/+free-music-downloads" class="footer__link">Free Music Downloads</a></li>
+            <li><a href="https://store.last.fm/" class="footer__link">Merchandise</a></li>
           </ul>
         </div>
         <div class="footer__topColumn">
           <h2 class="footer__heading">Account</h2>
           <ul class="footer__links">
-            <li><a href="/" class="footer__link">Sign Up</a></li>
-            <li><a href="/" class="footer__link">Log In</a></li>
-            <li><a href="/" class="footer__link">Subscribe</a></li>
+            <li><a href="https://www.last.fm/join" class="footer__link">Sign Up</a></li>
+            <li><a href="https://www.last.fm/login" class="footer__link">Log In</a></li>
+            <li><a href="https://www.last.fm/pro" class="footer__link">Subscribe</a></li>
           </ul>
         </div>
         <div class="footer__topColumn">
           <h2 class="footer__heading">Follow Us</h2>
           <ul class="footer__links">
-            <li><a href="/" class="footer__link">Facebook</a></li>
-            <li><a href="/" class="footer__link">X</a></li>
-            <li><a href="/" class="footer__link">Bluesky</a></li>
-            <li><a href="/" class="footer__link">YouTube</a></li>
+            <li><a href="https://www.facebook.com/lastfm" class="footer__link">Facebook</a></li>
+            <li><a href="https://x.com/lastfm" class="footer__link">X</a></li>
+            <li><a href="https://bsky.app/profile/last.fm" class="footer__link">Bluesky</a></li>
+            <li><a href="https://www.youtube.com/user/lastfm" class="footer__link">YouTube</a></li>
           </ul>
         </div>
       </div>
@@ -724,22 +147,28 @@
           <span>&nbsp;© 2025 Last.fm Ltd. All rights reserved&nbsp;</span>
           <ul>
             <li class="footer__legalListItem">
-              <a class="footer__smallLink" href="/">&middot; Terms of Use</a>
+              &middot;
+              <a class="footer__smallLink" href="https://www.last.fm/legal/terms">Terms of Use</a>
             </li>
             <li class="footer__legalListItem">
-              <a class="footer__smallLink" href="/">&middot; Privacy Policy</a>
+              &middot;
+              <a class="footer__smallLink" href="https://www.last.fm/legal/privacy">Privacy Policy</a>
             </li>
             <li class="footer__legalListItem">
-              <a class="footer__smallLink" href="/">&middot; Legal Policies</a>
+              &middot;
+              <a class="footer__smallLink" href="https://www.last.fm/legal">Legal Policies</a>
             </li>
             <li class="footer__legalListItem">
-              <a class="footer__smallLink" href="/">&middot; Cookie Details</a>
+              &middot;
+              <span>Cookie Details</span>
             </li>
             <li class="footer__legalListItem">
-              <a class="footer__smallLink" href="/">&middot; Jobs at Paramount</a>
+              &middot;
+              <a class="footer__smallLink" href="https://careers.paramount.com/">Jobs at Paramount</a>
             </li>
             <li class="footer__legalListItem">
-              <a class="footer__smallLink" href="/">&middot; Last.fm Music</a>
+              &middot;
+              <a class="footer__smallLink" href="http://www.last.fm/">Last.fm Music</a>
             </li>
           </ul>
         </div>
