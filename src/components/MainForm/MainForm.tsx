@@ -6,13 +6,15 @@ export const MainForm = (props: IMainForm) => {
     const {onSubmit} = props;
     const handleSubmit = (event: any) => {
         event.preventDefault();
-        const formData = new FormData(event.target);
+        const form = event.target as HTMLFormElement;
+        const formData = new FormData(form);
         const text = formData.get('searchInput') as string || '';
         if (text.length < 1)
         {
             return;
         }
         onSubmit(text);
+        form.reset();
     };
     return (
         <form className="search__form" method="get" onSubmit={handleSubmit}>
