@@ -315,24 +315,12 @@
     margin-top: 9px;
     position: absolute;
 }
-.accordion {
-    width: 66%;
-    margin-right: auto;
-    margin-top: 21px;
-    margin-bottom: 40px;
-    position: relative;
-    padding-left: 10%;
-    padding-right: 68px;
-}
-.space {
-    background: #f5f5f5;
-    width: 35%;
-}
 .main__searchSpace {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: 51%;
     position: relative;
+    margin: 21px auto 40px 320px;
 }
 .main__nav {
     display: flex;
@@ -554,21 +542,21 @@
 }
 .trackList__artist,
 .trackList__name {
-    flex-shrink: 1;
     overflow: hidden;
+    max-width: 460px;
+    text-overflow: ellipsis;
 }
 .trackList__name {
-    flex-grow: 1;
     width: 60%;
 }
 .trackList__artist {
     width: 40%;
 }
 .trackList__nameLink {
+    display: inline-block;
     font-weight: 700;
     color: #222;
     text-decoration: none;
-    text-overflow: ellipsis;
     white-space: nowrap;
 }
 .trackList__artistLink,

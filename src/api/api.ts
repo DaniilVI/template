@@ -7,10 +7,11 @@ import { ItemPopularList } from "../types/ItemPopularList";
 import { ItemArtistList } from "../types/ItemArtistList";
 import { ItemAlbumList } from "../types/ItemAlbumList";
 import { ItemTrackTable } from "../types/ItemTrackTable";
-
+import nullAlbum from './nullAlbumImage.webp';
+import nullArtist from './nullArtistImage.webp';
 
 const $API_key: string = "402edf32f4223834b83b71ccb849f0e0";
-const $API_path: string = "https://ws.audioscrobbler.com/2.0/?method=";
+const $API_path: string = "https://ws.audioscrobbler.com/2.0/";
 
 /**
 * Запрос списка топ 12 исполнителей
@@ -19,7 +20,7 @@ const $API_path: string = "https://ws.audioscrobbler.com/2.0/?method=";
 */
 export async function fetchHotList() {
     try {
-        const response = await fetch(`${$API_path}chart.gettopartists&format=json&api_key=${$API_key}&limit=12`);
+        const response = await fetch(`${$API_path}?method=chart.gettopartists&format=json&api_key=${$API_key}&limit=12`);
         if (response.status !== 200) {
             throw new Error('Something went wrong');
         }
@@ -79,7 +80,7 @@ export function addTrack(tracks: Track[]): ItemPopularList[] {
 */
 export async function fetchTags(artist: string) {
     try {
-        const response = await fetch(`${$API_path}artist.gettoptags&artist=${artist}&api_key=${$API_key}&format=json`);
+        const response = await fetch(`${$API_path}?method=artist.gettoptags&artist=${artist}&api_key=${$API_key}&format=json`);
         if (response.status !== 200) {
             throw new Error('Something went wrong');
         }
@@ -115,7 +116,7 @@ export function addTag(tags: Tag[]): Tag[] {
 */
 export async function fetchTrackTags(track: string, artist: string) {
     try {
-        const response = await fetch(`${$API_path}track.gettoptags&artist=${artist}&track=${track}&api_key=${$API_key}&format=json`);
+        const response = await fetch(`${$API_path}?method=track.gettoptags&artist=${artist}&track=${track}&api_key=${$API_key}&format=json`);
         if (response.status !== 200) {
             throw new Error('Something went wrong');
         }
@@ -134,7 +135,7 @@ export async function fetchTrackTags(track: string, artist: string) {
 */
 export async function fetchPopularList() {
     try {
-        const response = await fetch(`${$API_path}chart.gettoptracks&format=json&api_key=${$API_key}&limit=12`);
+        const response = await fetch(`${$API_path}?method=chart.gettoptracks&format=json&api_key=${$API_key}&limit=12`);
         if (response.status !== 200) {
             throw new Error('Something went wrong');
         }
@@ -159,7 +160,7 @@ export async function fetchPopularList() {
 */
 export async function fetchArtistList(text_search: string) {
     try {
-        const response = await fetch(`${$API_path}artist.search&artist=${text_search}&api_key=${$API_key}&format=json&limit=8`);
+        const response = await fetch(`${$API_path}?method=artist.search&artist=${text_search}&api_key=${$API_key}&format=json&limit=8`);
         if (response.status !== 200) {
             throw new Error('Something went wrong');
         }
@@ -184,7 +185,7 @@ export async function fetchArtistList(text_search: string) {
 export async function addArtistItem(artists: Artist[]): Promise<ItemArtistList[]> {
     return artists.map(artist => {
         const image = artist.image?.find(img => img.size === 'large');
-        const imgURL = image?.['#text'] || "nullArtistImage.webp";
+        const imgURL = image?.['#text'] || nullArtist;
         return {
             artist,
             imgURL,
@@ -201,7 +202,7 @@ export async function addArtistItem(artists: Artist[]): Promise<ItemArtistList[]
 */
 export async function fetchAlbumList(text_search: string) {
     try {
-        const response = await fetch(`${$API_path}album.search&album=${text_search}&api_key=${$API_key}&format=json&limit=8`);
+        const response = await fetch(`${$API_path}?method=album.search&album=${text_search}&api_key=${$API_key}&format=json&limit=8`);
         if (response.status !== 200) {
             throw new Error('Something went wrong');
         }
@@ -227,7 +228,7 @@ export async function addAlbumItem(albums: Album[]): Promise<ItemAlbumList[]> {
     const results = await Promise.all(
         albums.map(async album => {
             const image = album.image?.find(img => img.size === 'large');
-            const imgURL = image?.['#text'] || 'nullAlbumImage.webp';
+            const imgURL = image?.['#text'] || nullAlbum;
             const artistData = await fetchArtist(album.artist);
             const artist = artistData?.artist || null;
             return {
@@ -249,7 +250,7 @@ export async function addAlbumItem(albums: Album[]): Promise<ItemAlbumList[]> {
 */
 async function fetchArtist(artist: string) {
     try {
-        const response = await fetch(`${$API_path}artist.getinfo&artist=${artist}&api_key=${$API_key}&format=json`);
+        const response = await fetch(`${$API_path}?method=artist.getinfo&artist=${artist}&api_key=${$API_key}&format=json`);
         if (response.status !== 200) {
             throw new Error('Something went wrong');
         }
@@ -269,7 +270,7 @@ async function fetchArtist(artist: string) {
 */
 export async function fetchTrackList(text_search: string) {
     try {
-        const response = await fetch(`${$API_path}track.search&track=${text_search}&api_key=${$API_key}&format=json&limit=10`);
+        const response = await fetch(`${$API_path}?method=track.search&track=${text_search}&api_key=${$API_key}&format=json&limit=10`);
         if (response.status !== 200) {
             throw new Error('Something went wrong');
         }
@@ -298,7 +299,7 @@ export async function addTrackItem(tracks: Track[]): Promise<ItemTrackTable[]> {
             const album = info?.album;
             const artist = info.artist as Artist;
             const image = album?.image.find(img => img.size === 'small');
-            const imgURL = image?.['#text'] || "nullAlbumImage.webp";
+            const imgURL = image?.['#text'] || nullAlbum;
             let time = "";
             if (info.duration && info.duration !== '0') {
                 const ms = parseInt(info.duration, 10);
@@ -328,10 +329,7 @@ export async function addTrackItem(tracks: Track[]): Promise<ItemTrackTable[]> {
 */
 async function fetchInfo(track: Track) {
     try {
-        if (track.name[0] === "#") {
-            track.name = track.name.slice(1);
-        }
-        const response = await fetch(`${$API_path}track.getInfo&artist=${(track.artist as string)}&track=${track.name}&api_key=${$API_key}&format=json`);
+        const response = await fetch(`${$API_path}?method=track.getInfo&artist=${encodeURIComponent(track.artist as string)}&track=${encodeURIComponent(track.name)}&api_key=${$API_key}&format=json`);
         if (response.status !== 200) {
             throw new Error('Something went wrong');
         }

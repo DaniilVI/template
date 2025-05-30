@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { MainForm } from "../MainForm/MainForm";
 import { ArtistList } from "../ArtistList/ArtistList";
 import { ItemArtistList } from "../../types/ItemArtistList";
@@ -22,7 +21,6 @@ export const MainSearchSpace = (props: ISpace) => {
 
     return (
         <div className={`main__searchSpace ${flag}`}>
-            <div className="accordion">
                 <h1 className="main__searchHead1">Search results for “{searchTextHeader}”</h1>
                 <MainForm onSubmit={onSubmit} />
                 <h2><span className="main__headLink">Artists</span></h2>
@@ -53,9 +51,6 @@ export const MainSearchSpace = (props: ISpace) => {
                 ) : (
                     <p className="message">No tracks found.</p>
                 )}
-            </div>
-            <div className="space">
-            </div>
         </div>
     );
 };
